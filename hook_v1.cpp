@@ -48,7 +48,7 @@ void install_hook()
     relative_offset= (DWORD *)(dst-src); 
 
     memcpy(patch, "\xE9", 1);
-	memcpy(patch + 1, &relative_offset, 4);
+    memcpy(patch + 1, &relative_offset, 4);
 
     WriteProcessMemory(GetCurrentProcess(), (LPVOID)hooked_address, patch, 5, NULL);
 }
