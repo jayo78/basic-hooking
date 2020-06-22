@@ -58,8 +58,9 @@ int main()
     // call without hook
     MessageBoxA(NULL, "hello", "hello", MB_OK);
 
-    // call with hook (arguments will be altered through the proxy function)
     install_hook();
+    
+    // call with hook (arguments will be altered through the proxy function)
     MessageBoxA(NULL, "hello", "hello", MB_OK);
 
     return 0;

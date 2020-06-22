@@ -1,7 +1,7 @@
 /*
-** Simple MessageBoxA hook using the classic 5 byte relative jump technique without a trampoline.
-** Instead of bypassing the hook in the proxy function when passing execution to MessageBoxA, we 
-** will simply re-write the original bytes, unhooking the function.
+** Simple MessageBoxA hook using the classic 5 byte relative jump technique with a trampoline.
+** The trampoline will be able to bypass the installed hook by executing the saved instructions
+** and then calling MessageBoxA + 5 bytes
 */
 
 #include <iostream>

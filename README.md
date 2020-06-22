@@ -1,8 +1,9 @@
 # basic-hooking
 
-Refrenced here - jayo78.github.io
+Refrenced here - https://jayo78.github.io/Sandbox-part-1-basic-hooking/
 
-Hooking MessageBoxA function
-- 5 byte hook with no trampoline
-- 5 byte hook with a trampoline
+- hook_v1: 5 byte MessageBoxA hook with no trampoline
+- hook_v2: 5 byte MessageBoxA hook with a trampoline
+
+
 
